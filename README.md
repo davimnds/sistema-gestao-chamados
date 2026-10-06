@@ -1,4 +1,4 @@
-Markdown# 🎫 Sistema de Gestão de Chamados — API REST
+# 🎫 Sistema de Gestão de Chamados — API REST
 
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen.svg)](https://spring.io/projects/spring-boot)
@@ -76,12 +76,3 @@ erDiagram
     USUARIO ||--o{ COMENTARIO : "escreve"
     CATEGORIA ||--o{ CHAMADO : "classifica"
     CHAMADO ||--o{ COMENTARIO : "possui"
-🚀 Como Executar o ProjetoPré-requisitosJava JDK 17 ou superior instalado.Git instalado.Passo a PassoClonar o repositório:Bashgit clone [https://github.com/davimnds/sistema-gestao-chamados.git](https://github.com/davimnds/sistema-gestao-chamados.git)
-cd sistema-gestao-chamados
-Compilar e Executar a aplicação:PowerShell# No Windows:
-.\mvnw.cmd spring-boot:run
-
-# No Linux/Mac:
-./mvnw spring-boot:run
-Acessar o Swagger UI:Abra no navegador: http://localhost:8080/swagger-ui.htmlAcessar o H2 Console (Opcional):URL: http://localhost:8080/h2-consoleJDBC URL: jdbc:h2:mem:chamados_dbUser: sa | Password: (em branco)🔑 Dados Fictícios de Teste (Data Seeder)A aplicação popula automaticamente o banco de dados na inicialização com as seguintes contas (senhas criptografadas com BCrypt):PerfilE-mailSenhaFunçãoADMINadmin@email.com123456Gerenciamento total do sistemaATENDENTEatendente@email.com123456Atendimento e atualização de chamadosSOLICITANTEcarlos@email.com123456Abertura e consulta de chamados próprios🧪 Executando os Testes UnitáriosPara rodar os testes unitários das regras de negócio (JUnit 5 + Mockito):PowerShell.\mvnw.cmd test
-📂 Coleção de Testes (Postman / Insomnia)A coleção de requisições prontas está disponível no diretório docs/:docs/sistema-gestao-chamados.postman_collection.json📄 LicençaEste projeto está sob a licença MIT.
